@@ -1,0 +1,14 @@
+
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter game details</h1>
+
+  <%= simple_form_for @game do |f| %>
+    <%= f.input :game_date %>
+    <%= f.input :game_time %>
+    <%= f.input :game_number %>
+    <%= f.input :opponent %>
+    <%= f.input :home %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
